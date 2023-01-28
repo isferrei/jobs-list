@@ -1,4 +1,4 @@
-Welcome to the Job Listing App!
+## Welcome to the Job Listing App!
 
 This project is a simple job listing application built with React and Chakra UI. It allows users to filter through job listings by company name and date posted. The job listings are pulled from the Zippia API and rendered in a user-friendly format.
 
