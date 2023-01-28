@@ -70,6 +70,7 @@ export default function Test({ jobs }: JobsProps) {
             Company name
           </MenuButton>
           <MenuList>
+            {/* Mapping the menu items */}
             {jobs.map((job) => (
               <MenuItem
                 onClick={() => filterByCompany(job.companyName)}
@@ -87,6 +88,7 @@ export default function Test({ jobs }: JobsProps) {
           <Heading>{job.title}</Heading>
           <Text fontSize="lg">{job.companyName}</Text>
           <Text fontSize="sm">
+            {/*The .toLocaleDateString format the date that will appear for the user*/}
             {new Date(job.publishedDate).toLocaleDateString("en-US", {
               day: "numeric",
               month: "short",
@@ -97,6 +99,7 @@ export default function Test({ jobs }: JobsProps) {
             <Text fontSize="2xl" as="b">
               Job Description:
             </Text>
+            {/*Rendering the job description using react-html-parser to parse the HTML content of the job description. */}
             {ReactHtmlParser(job.description)}
           </div>
         </div>
