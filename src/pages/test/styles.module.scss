@@ -27,3 +27,12 @@
   display: flex;
   gap: 1rem;
 }
+
+@media (max-width: 425px) {
+  .container {
+    margin: 1rem;
+  }
+  .card {
+    padding: 2rem;
+  }
+}
